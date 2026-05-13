@@ -1,113 +1,221 @@
 <!DOCTYPE html>
-<html lang='pt-BR'>
+<html lang="pt-BR">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name='description' content='MC SOLUÇÕES EM DRONES LTDA - Drones profissionais, peças, acessórios e soluções completas para agricultura, inspeção e segurança.'>
-    <meta name='keywords' content='drones, drone agrícola, mc drones, pontes e lacerda, mato grosso'>
-    <title>MC SOLUÇÕES EM DRONES LTDA - Drones Profissionais</title>
-    <link rel='icon' href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚁</text></svg>'>
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-        
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        :root {
-            --cor-primaria: #0ea5e9;
-            --cor-secundaria: #0369a1;
-            --gradiente: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);
-        }
-        
-        body { font-family: 'Poppins', sans-serif; line-height: 1.6; color: #333; }
-        header { background: rgba(255,255,255,0.98); backdrop-filter: blur(10px); position: fixed; top: 0; left: 0; right: 0; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.1); padding: 1rem 0; }
-        .logo { font-size: 1.9rem; font-weight: 800; background: var(--gradiente); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero { background: var(--gradiente); color: white; padding: 180px 20px 120px; text-align: center; }
-        .btn { padding: 14px 38px; margin: 10px; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-block; }
-        .btn-primary { background: white; color: var(--cor-primaria); }
-        .btn-outline { border: 2px solid white; color: white; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 65px;
-            height: 65px;
-            background: #25D366;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.2rem;
-            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
-            z-index: 9999;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Privacidade e Cookies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#e5e7eb;
+padding:10px;
+}
+
+/* CONTAINER */
+.cookie-box{
+width:100%;
+max-width:360px;
+margin:0 auto;
+background:#fff;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+overflow:hidden;
+}
+
+/* HEADER */
+.header{
+background:#0f172a;
+color:#fff;
+padding:12px;
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.icon{
+width:32px;
+height:32px;
+border-radius:6px;
+background:#1e293b;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:14px;
+}
+
+/* TITULO */
+.header h1{
+font-size:14px;
+}
+
+.header p{
+font-size:10px;
+opacity:.8;
+}
+
+/* CONTENT */
+.content{
+padding:12px;
+}
+
+/* BOTÕES NO TOPO */
+.buttons{
+display:flex;
+flex-direction:column;
+gap:6px;
+margin-bottom:12px;
+}
+
+.btn{
+width:100%;
+padding:12px;
+border-radius:8px;
+font-size:12px;
+font-weight:600;
+border:none;
+cursor:pointer;
+}
+
+/* CORES */
+.accept{
+background:#2563eb;
+color:#fff;
+}
+
+.reject{
+background:#e5e7eb;
+}
+
+.custom{
+background:#fff;
+border:1px solid #cbd5f5;
+color:#2563eb;
+}
+
+/* TEXTO */
+.text{
+font-size:11px;
+color:#475569;
+margin-bottom:10px;
+text-align:center;
+}
+
+/* CARDS */
+.cards{
+display:flex;
+flex-direction:column;
+gap:6px;
+margin-bottom:10px;
+}
+
+.card{
+padding:10px;
+border-radius:8px;
+background:#f8fafc;
+border:1px solid #e2e8f0;
+}
+
+.card h3{
+font-size:11px;
+margin-bottom:2px;
+}
+
+.card p{
+font-size:9px;
+color:#64748b;
+}
+
+/* FOOTER */
+.footer{
+text-align:center;
+font-size:9px;
+color:#64748b;
+}
+
+.footer a{
+color:#2563eb;
+text-decoration:none;
+}
+
+</style>
 </head>
+
 <body>
 
-    <header>
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="logo">MC DRONES</div>
-            <nav>
-                <a href="#sobre" style="margin: 0 15px; color:#333; text-decoration:none; font-weight:500;">Sobre</a>
-                <a href="#contato" style="margin: 0 15px; color:#333; text-decoration:none; font-weight:500;">Contato</a>
-            </nav>
-        </div>
-    </header>
+<div class="cookie-box">
 
-    <section class="hero">
-        <div class="container">
-            <h1 style="font-size: 3.2rem; margin-bottom: 20px;">🚁 MC SOLUÇÕES EM DRONES</h1>
-            <p style="font-size: 1.35rem; max-width: 700px; margin: 0 auto 30px;">Drones Profissionais • Peças • Acessórios • Soluções Completas</p>
-            <a href="#contato" class="btn btn-primary">Fale Conosco</a>
-            <a href="#sobre" class="btn btn-outline">Saiba Mais</a>
-        </div>
-    </section>
+<div class="header">
+<div class="icon">🔐</div>
+<div>
+<h1>Privacidade e Cookies</h1>
+<p>Controle sua experiência</p>
+</div>
+</div>
 
-    <section id="sobre" style="padding: 100px 20px; background: #f8fafc;">
-        <div class="container" style="text-align: center;">
-            <h2>Sobre a Empresa</h2>
-            <div style="max-width: 900px; margin: 40px auto; background: white; padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
-                <h3>MC SOLUÇÕES EM DRONES LTDA</h3>
-                <p>Especializada em comércio de drones, peças, acessórios e soluções aeronáuticas de alta qualidade para agricultura, inspeção industrial e segurança.</p>
-                <br>
-                <p><strong>Razão Social:</strong> MC SOLUCOES EM DRONES LTDA</p>
-                <p><strong>CNPJ:</strong> 63.957.870/0001-73</p>
-                <p><strong>Telefone:</strong> (65) 8150-0600</p>
-                <p><strong>E-mail:</strong> micael_mqm20@hotmail.com</p>
-                <p><strong>Endereço:</strong> Pontes e Lacerda - MT</p>
-                <p><strong>CEP:</strong> 78250-000</p>
-            </div>
-        </div>
-    </section>
+<div class="content">
 
-    <section id="contato" style="padding: 100px 20px;">
-        <div class="container" style="text-align: center;">
-            <h2>Entre em Contato</h2>
-            <p style="font-size: 1.2rem; margin: 25px 0;">Estamos prontos para atender você!</p>
-            
-            <div style="display: inline-block; background: #f1f5f9; padding: 40px; border-radius: 20px; text-align: left;">
-                <p><strong>📞 Telefone:</strong> (65) 8150-0600</p>
-                <p><strong>✉️ E-mail:</strong> micael_mqm20@hotmail.com</p>
-                <p><strong>📍 Localização:</strong> Pontes e Lacerda - MT</p>
-                <p><strong>📬 CEP:</strong> 78250-000</p>
-            </div>
-        </div>
-    </section>
+<!-- BOTÕES -->
+<div class="buttons">
+<button class="btn accept" onclick="aceitar()">Aceitar e Continuar</button>
+<button class="btn reject" onclick="rejeitar()">Rejeitar</button>
+<button class="btn custom" onclick="personalizar()">Configurar</button>
+</div>
 
-    <!-- WhatsApp Flutuante -->
-    <a href="https://wa.me/556581500600" target="_blank" class="whatsapp-float" title="Fale conosco no WhatsApp">
-        💬
-    </a>
+<div class="text">
+Usamos cookies para melhorar sua navegação e experiência.
+</div>
 
-    <footer style="background: #0f172a; color: white; text-align: center; padding: 50px 20px;">
-        <p>&copy; 2026 MC SOLUÇÕES EM DRONES LTDA. Todos os direitos reservados.</p>
-        <p>CNPJ: 63.957.870/0001-73 | (65) 8150-0600 | Pontes e Lacerda - MT</p>
-    </footer>
+<div class="cards">
+
+<div class="card">
+<h3>🔒 Essenciais</h3>
+<p>Funcionamento do site</p>
+</div>
+
+<div class="card">
+<h3>📊 Desempenho</h3>
+<p>Melhoram sua experiência</p>
+</div>
+
+</div>
+
+<div class="footer">
+Veja nossa <a href="#">Política</a>
+</div>
+
+</div>
+
+</div>
+
+<script>
+const LINK = "https://brasil-dos-nomes.netlify.app/"
+
+function aceitar(){
+localStorage.setItem("cookies","accepted")
+location.href = LINK
+}
+
+function rejeitar(){
+localStorage.setItem("cookies","rejected")
+location.href = LINK
+}
+
+function personalizar(){
+localStorage.setItem("cookies","custom")
+location.href = LINK
+}
+</script>
 
 </body>
 </html>
