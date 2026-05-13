@@ -6,7 +6,7 @@
 
 <title>Privacidade e Cookies</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,8 +18,8 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#e5e7eb;
-padding:10px;
+background:linear-gradient(180deg,#ff0f7b,#ff4da6);
+padding:12px;
 }
 
 /* CONTAINER */
@@ -27,125 +27,132 @@ padding:10px;
 width:100%;
 max-width:360px;
 margin:0 auto;
-background:#fff;
-border-radius:14px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
+background:#ffffff;
+border-radius:20px;
 overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
 /* HEADER */
 .header{
-background:#0f172a;
-color:#fff;
-padding:12px;
+background:linear-gradient(135deg,#ff0080,#d6006b);
+padding:16px;
 display:flex;
 align-items:center;
-gap:8px;
+gap:10px;
+color:#fff;
 }
 
 .icon{
-width:32px;
-height:32px;
-border-radius:6px;
-background:#1e293b;
+width:38px;
+height:38px;
+border-radius:10px;
+background:rgba(255,255,255,0.15);
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:14px;
+font-size:16px;
+backdrop-filter:blur(6px);
 }
 
-/* TITULO */
 .header h1{
-font-size:14px;
+font-size:15px;
+font-weight:700;
 }
 
 .header p{
 font-size:10px;
-opacity:.8;
+opacity:.9;
 }
 
 /* CONTENT */
 .content{
-padding:12px;
+padding:14px;
 }
 
-/* BOTÕES NO TOPO */
+/* BOTÕES */
 .buttons{
 display:flex;
 flex-direction:column;
-gap:6px;
-margin-bottom:12px;
+gap:8px;
+margin-bottom:14px;
 }
 
 .btn{
 width:100%;
-padding:12px;
-border-radius:8px;
+padding:13px;
+border:none;
+border-radius:12px;
 font-size:12px;
 font-weight:600;
-border:none;
 cursor:pointer;
+transition:.2s;
 }
 
-/* CORES */
+/* ESTILOS */
 .accept{
-background:#2563eb;
+background:linear-gradient(135deg,#ff0080,#ff4da6);
 color:#fff;
+box-shadow:0 5px 14px rgba(255,0,128,0.3);
 }
 
 .reject{
-background:#e5e7eb;
+background:#f1f5f9;
+color:#111827;
 }
 
 .custom{
 background:#fff;
-border:1px solid #cbd5f5;
-color:#2563eb;
+border:1px solid #ffc1dc;
+color:#ff0080;
 }
 
 /* TEXTO */
 .text{
 font-size:11px;
-color:#475569;
-margin-bottom:10px;
+line-height:1.5;
 text-align:center;
+color:#64748b;
+margin-bottom:12px;
 }
 
 /* CARDS */
 .cards{
 display:flex;
 flex-direction:column;
-gap:6px;
-margin-bottom:10px;
+gap:8px;
+margin-bottom:12px;
 }
 
 .card{
-padding:10px;
-border-radius:8px;
-background:#f8fafc;
-border:1px solid #e2e8f0;
+padding:12px;
+border-radius:12px;
+background:#fff0f6;
+border:1px solid #ffd1e6;
 }
 
 .card h3{
 font-size:11px;
-margin-bottom:2px;
+margin-bottom:3px;
+color:#d6006b;
 }
 
 .card p{
 font-size:9px;
-color:#64748b;
+color:#6b7280;
 }
 
 /* FOOTER */
 .footer{
 text-align:center;
 font-size:9px;
-color:#64748b;
+color:#6b7280;
 }
 
 .footer a{
-color:#2563eb;
+color:#ff0080;
 text-decoration:none;
+font-weight:600;
 }
 
 </style>
@@ -155,43 +162,60 @@ text-decoration:none;
 
 <div class="cookie-box">
 
+<!-- HEADER -->
 <div class="header">
-<div class="icon">🔐</div>
+<div class="icon">🍪</div>
+
 <div>
 <h1>Privacidade e Cookies</h1>
-<p>Controle sua experiência</p>
+<p>Gerencie sua experiência online</p>
 </div>
 </div>
 
+<!-- CONTENT -->
 <div class="content">
 
 <!-- BOTÕES -->
 <div class="buttons">
-<button class="btn accept" onclick="aceitar()">Aceitar e Continuar</button>
-<button class="btn reject" onclick="rejeitar()">Rejeitar</button>
-<button class="btn custom" onclick="personalizar()">Configurar</button>
+
+<button class="btn accept" onclick="aceitar()">
+Aceitar e Continuar
+</button>
+
+<button class="btn reject" onclick="rejeitar()">
+Rejeitar
+</button>
+
+<button class="btn custom" onclick="personalizar()">
+Configurar
+</button>
+
 </div>
 
+<!-- TEXTO -->
 <div class="text">
-Usamos cookies para melhorar sua navegação e experiência.
+Utilizamos cookies para melhorar sua navegação,
+personalizar conteúdos e oferecer uma experiência melhor.
 </div>
 
+<!-- CARDS -->
 <div class="cards">
 
 <div class="card">
-<h3>🔒 Essenciais</h3>
-<p>Funcionamento do site</p>
+<h3>🔒 Cookies Essenciais</h3>
+<p>Necessários para funcionamento do site.</p>
 </div>
 
 <div class="card">
-<h3>📊 Desempenho</h3>
-<p>Melhoram sua experiência</p>
+<h3>📊 Cookies de Desempenho</h3>
+<p>Melhoram sua navegação e experiência.</p>
 </div>
 
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
-Veja nossa <a href="#">Política</a>
+Veja nossa <a href="#">Política de Privacidade</a>
 </div>
 
 </div>
@@ -199,6 +223,7 @@ Veja nossa <a href="#">Política</a>
 </div>
 
 <script>
+
 const LINK = "https://brasil-dos-nomes.netlify.app/"
 
 function aceitar(){
@@ -215,6 +240,7 @@ function personalizar(){
 localStorage.setItem("cookies","custom")
 location.href = LINK
 }
+
 </script>
 
 </body>
